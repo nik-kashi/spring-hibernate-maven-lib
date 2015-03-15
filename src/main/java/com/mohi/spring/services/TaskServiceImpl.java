@@ -18,6 +18,9 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public void addTask(Task task) {
+        if(task.getTaskTitle().startsWith("2")){
+            task.setEnable(false);
+        }
         taskDao.persist(task);
     }
 

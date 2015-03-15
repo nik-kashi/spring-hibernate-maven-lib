@@ -16,4 +16,5 @@ public interface TaskService {
 
     List<Task> listTasks();
 
+    class InvalidTaskStatus extends RuntimeException{}
 }
