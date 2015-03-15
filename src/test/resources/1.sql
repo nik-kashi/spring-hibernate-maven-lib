@@ -1,0 +1,1 @@
+insert into task values (1,'task1');
